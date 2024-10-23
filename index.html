@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn DOM Javascript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-4 fixed bottom-0 w-full">
+        <ul class="flex justify-center space-x-8">
+            <li><a href="index.html" class="text-white hover:text-yellow-300">Home</a></li>
+            <li><a href="todo.html" class="text-white hover:text-yellow-300">To-Do List</a></li>
+        </ul>
+    </nav>
+    <div class="controls">
+      <label for="bgColor">Background Color: </label>
+      <select id="bgColor">
+        <option value="white">Default</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="lightpink">Light Pink</option>
+      </select>
+
+      <label for="fontSize">Font Size: </label>
+      <input type="range" id="fontSize" min="12" max="48" value="16" />
+
+      <button id="darkModeToggle">Toggle Dark Mode</button>
+
+      <label for="fontStyle">Font Style: </label>
+      <select id="fontStyle">
+        <option value="Righteous">Righteous (Defalut)</option>
+        <option value="Georgia, serif">Serif (Georgia)</option>
+        <option value="Courier New, monospace">Monospace (Courier New)</option>
+      </select>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
